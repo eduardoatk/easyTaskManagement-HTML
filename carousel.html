@@ -18,8 +18,14 @@
 		<title>Easy Task Management</title>
 
 		<style>
+			html,
+			body {
+				overflow: hidden;
+				height: 100%;
+			}
+
 			header {
-				height: 200px;
+				height: 25%;
 				background: rgb(58, 58, 180);
 				background: linear-gradient(
 					140deg,
@@ -32,8 +38,12 @@
 					"Helvetica Neue", sans-serif;
 			}
 
+			.meuCarrossel {
+				height: 50%;
+			}
+
 			.pgbr-carousel-item {
-				height: 450px;
+				height: 400px;
 			}
 
 			.separator {
@@ -66,7 +76,7 @@
 				background-color: #444;
 				font-size: 16px;
 				font-weight: 300;
-				min-height: 150px;
+				height: 25%;
 				color: #fcba03;
 				display: flex;
 				flex-direction: column;
@@ -79,7 +89,129 @@
 
 			.footer-msg {
 				font-size: 20px;
-				justify-content: ;
+			}
+
+			img {
+				width: 200px;
+			}
+
+			@media screen and (max-width: 1300px) {
+				html,
+				body {
+					overflow: hidden;
+					height: 100%;
+				}
+
+				header {
+					height: 25%;
+				}
+
+				.separator {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.meuCarrossel {
+					height: 50%;
+				}
+
+				.pgbr-carousel-item {
+					height: 200px;
+				}
+
+				.title,
+				.pt {
+					font-size: 36px;
+					max-width: 500px;
+				}
+
+				.soon {
+					font-size: 16px;
+					max-width: 450px;
+				}
+
+				.carousel-font {
+					font-size: 68px;
+				}
+
+				footer {
+					font-size: 15px;
+					height: 25%;
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.footer-msg {
+					font-size: 18px;
+				}
+			}
+
+			img {
+				width: 200px;
+			}
+
+			@media screen and (max-width: 500px) {
+				html,
+				body {
+					overflow: hidden;
+					height: 100%;
+				}
+
+				header {
+					height: 25%;
+				}
+
+				.separator {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.meuCarrossel {
+					height: 50%;
+				}
+
+				.pgbr-carousel-item {
+					height: 200px;
+				}
+
+				.title,
+				.pt {
+					font-size: 32px;
+					max-width: 450px;
+				}
+
+				.soon {
+					font-size: 14px;
+					max-width: 450px;
+				}
+
+				.carousel-font {
+					font-size: 48px;
+				}
+
+				footer {
+					font-size: 13px;
+					height: 25%;
+					width: 100%;
+				}
+
+				.footer-msg {
+					font-size: 15px;
+				}
+
+				img {
+					width: 100px;
+				}
 			}
 		</style>
 	</head>
@@ -122,11 +254,7 @@
 						style="justify-content: space-around"
 						class="bg-info text-light d-flex align-items-center pgbr-carousel-item"
 					>
-						<img
-							src="./img/to-do-list.png"
-							alt="a tomato picture"
-							style="width: 200px"
-						/>
+						<img src="./img/to-do-list.png" alt="a tomato picture" />
 						<span>TODO LIST</span>
 					</div>
 				</div>
@@ -136,11 +264,7 @@
 						style="justify-content: space-around"
 						class="bg-warning text-light d-flex align-items-center pgbr-carousel-item"
 					>
-						<img
-							src="./img/kanban.png"
-							alt="a kanban picture"
-							style="width: 200px"
-						/>
+						<img src="./img/kanban.png" alt="a kanban picture" />
 						<span>KANBAN</span>
 					</div>
 				</div>
@@ -150,11 +274,7 @@
 						style="justify-content: space-around"
 						class="bg-danger text-light d-flex align-items-center pgbr-carousel-item"
 					>
-						<img
-							src="./img/pomodoro.png"
-							alt="a tomato picture"
-							style="width: 200px"
-						/>
+						<img src="./img/pomodoro.png" alt="a tomato picture" />
 						<span>POMODORO</span>
 					</div>
 				</div>
@@ -180,7 +300,6 @@
 		<hr />
 
 		<footer>
-			<br />
 			<div class="footer-msg">
 				Enquanto terminamos de deixar tudo pronto para você, é possível entrar
 				em contato conosco através do e-mail:
@@ -192,7 +311,7 @@
 					>contato@easytaskmanagement.com</a
 				>
 			</e-mail>
-			<br />
+
 			<p>Easy Task Management &copy; 2022</p>
 			<p style="font-size: 16px; text-decoration: none; color: #444">
 				<a href="https://www.flaticon.com/free-icons/" title="free icons"
