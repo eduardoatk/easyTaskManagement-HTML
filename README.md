@@ -8,4 +8,6 @@
 
 ### - POMODORO
 ------
-Complete integration between the tools! You can control your task, manager the ongoing ones and use the Pomodoro method to be productive while working or studying to achieve your goals
+Complete integration between the tools! You can control your task, manager the ongoing ones and use the Pomodoro method to be productive while working or studying to achieve your goals.
+
+Soon... We are building it for you! ;)
